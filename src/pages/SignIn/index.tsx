@@ -38,6 +38,7 @@ const SignIn: React.FC = () => {
   const navigation = useNavigation();
 
   const handleSignIn = useCallback(async (data: SignInFormData) => {
+    console.log(data);
     try {
       formRef.current?.setErrors({});
 
